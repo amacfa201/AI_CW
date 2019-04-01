@@ -20,7 +20,7 @@ public class SeekAgent : Agent
 
     private void Start()
     {
-        ts = GameObject.FindGameObjectWithTag("Enviroment").GetComponent<TargetSpawner>();
+        ts = this.gameObject.transform.parent.GetComponent<TargetSpawner>();
     }
     public override void InitializeAgent()
     {
@@ -60,7 +60,7 @@ public class SeekAgent : Agent
         Vector3 cpn = Vector3.zero;
         cpn.x = vectorAction[0];
         cpn.z = vectorAction[1];
-        rigidbody.AddForce(cpn * 10);
+        rigidbody.AddForce(cpn * 25);
         AddReward(-1f / agentParameters.maxStep); //makes them move faster
         //AgentDistance();
     }

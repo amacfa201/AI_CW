@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 0c4a6535c2d59274cac16c3ca5e93335
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: Assets/Brains/AgentLearning 9.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}
